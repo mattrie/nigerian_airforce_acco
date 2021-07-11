@@ -1,0 +1,45 @@
+cd /c/xampp/htdocs/651BSGACCN
+cd /c/xampp/htdocs/finsolute
+git init
+
+// no backdates
+git add .
+git commit -m "Initial commit"
+
+// this is for general backdate
+git add --all
+GIT_COMMITTER_DATE="2021-07-11T12:00:00" GIT_AUTHOR_DATE="2021-07-11T12:00:00" git commit -m "Initial commit"
+
+
+git remote add origin https://github.com/mattrie/nigerian_airforce_acco.git
+git branch -M main  # Rename the default branch to 'main' (optional)
+git push -u origin main
+
+git add -f air_men_edit_members.php fin_admin.php air_men_member.php block_leader_home.php block_leader.php edit_members.php history_accomodation.php index.php members.php personel_login.php record_signal.php request.php send_leaders.php view_member.php
+
+GIT_COMMITTER_DATE="2020-12-27T12:00:00" GIT_AUTHOR_DATE="2020-12-27T12:00:00" git commit -m "Code update by Adedokun Adewale Azeez on 5th August 2020"
+
+git push origin main --force
+GIT_COMMITTER_DATE="2021-07-11T12:00:00" GIT_AUTHOR_DATE="2020-07-11T12:00:00" git commit -m "Initial commit"
+
+3️⃣ Recommit with All 8 Files
+Now, recommit with the correct author and date:
+
+bash
+Copy
+Edit
+git commit -m "Edits made by Adedokun Adewale Azeez on April 3, 2022"
+4️⃣ Push with Force to Rewrite History
+Since you’re modifying commit history, push with --force:
+
+bash
+Copy
+Edit
+git push --force origin main
+🚨 Warning: This will override history, so ensure no one else is working on the same branch before doing this.
+
+
+git commit --amend
+git push origin main --force
+
+
